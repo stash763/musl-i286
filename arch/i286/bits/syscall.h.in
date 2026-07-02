@@ -1,0 +1,62 @@
+/* OS/2 API call numbers - maps to Dos* functions */
+#define __NR_read       1   /* DosRead */
+#define __NR_write      2   /* DosWrite */
+#define __NR_open       3   /* DosOpen */
+#define __NR_close      4   /* DosClose */
+#define __NR_lseek      5   /* DosChgFilePtr */
+#define __NR_exit       6   /* DosExit */
+#define __NR_exit_group 6   /* DosExit (same) */
+#define __NR_getpid     7   /* DosGetPID */
+#define __NR_gettime    8   /* DosGetDateTime */
+#define __NR_sleep      9   /* DosSleep */
+#define __NR_alloc      10  /* DosAllocSeg */
+#define __NR_free       11  /* DosFreeSeg */
+#define __NR_dup        12  /* DosDupHandle */
+#define __NR_pipe       13  /* DosMakePipe */
+#define __NR_chdir      14  /* DosChDir */
+#define __NR_getcwd     15  /* DosGetCurrentDir */
+#define __NR_mkdir      16  /* DosMkDir */
+#define __NR_rmdir      17  /* DosRmDir */
+#define __NR_unlink     18  /* DosDelete */
+#define __NR_rename     19  /* DosMove */
+#define __NR_stat       20  /* DosQFileInfo */
+#define __NR_fstat      21  /* DosQFileInfo (handle) */
+#define __NR_access     22  /* DosQueryPathInfo */
+#define __NR_fcntl      23  /* DosSetFHandl */
+#define __NR_ioctl      24  /* DevIOCtl */
+#define __NR_getenv     25  /* DosScanEnv */
+#define __NR_getuid     26  /* Stub - return 0 */
+#define __NR_getgid     27  /* Stub - return 0 */
+#define __NR_geteuid    28  /* Stub - return 0 */
+#define __NR_getegid    29  /* Stub - return 0 */
+#define __NR_setuid     30  /* Stub - return 0 */
+#define __NR_setgid     31  /* Stub - return 0 */
+#define __NR_seteuid    32  /* Stub - return 0 */
+#define __NR_setegid    33  /* Stub - return 0 */
+#define __NR_kill       34  /* Stub - return ENOSYS */
+#define __NR_sigaction  35  /* Stub - return ENOSYS */
+#define __NR_sigprocmask 36 /* Stub - return ENOSYS */
+#define __NR_wait4      37  /* Stub - return ENOSYS */
+#define __NR_execve     38  /* DosExecPgm */
+#define __NR_fork       39  /* Stub - return ENOSYS */
+#define __NR_brk        40  /* Stub - return ENOSYS */
+#define __NR_mmap       41  /* DosAllocSeg */
+#define __NR_munmap     42  /* DosFreeSeg */
+#define __NR_mprotect   43  /* Stub - return ENOSYS */
+#define __NR_getdents   44  /* DosFindFirst/DosFindNext */
+#define __NR_select     45  /* Stub - return ENOSYS */
+#define __NR_poll       46  /* Stub - return ENOSYS */
+#define __NR_socket     47  /* Stub - return ENOSYS */
+#define __NR_connect    48  /* Stub - return ENOSYS */
+#define __NR_bind       49  /* Stub - return ENOSYS */
+#define __NR_listen     50  /* Stub - return ENOSYS */
+#define __NR_accept     51  /* Stub - return ENOSYS */
+#define __NR_recv       52  /* Stub - return ENOSYS */
+#define __NR_send       53  /* Stub - return ENOSYS */
+#define __NR_clock_gettime 54 /* DosGetDateTime */
+#define __NR_clock_nanosleep 55 /* DosSleep */
+#define __NR_futex      56  /* Stub - return ENOSYS */
+#define __NR_set_tid_address 57 /* Stub - return 0 */
+#define __NR_set_robust_list 58 /* Stub - return 0 */
+#define __NR_get_robust_list 59 /* Stub - return 0 */
+#define __NR_getrandom  60  /* Stub - return ENOSYS */
